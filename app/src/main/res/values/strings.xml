@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RxJavaDemo</string>
+    <string name="operate_create">创建操作符</string>
+    <string name="operate_transform">转换操作符</string>
+    <string name="operate_merge">合并操作符</string>
+    <string name="operate_fun">功能操作符</string>
+    <string name="operate_filter">过滤操作符</string>
+    <string name="operate_condition">条件操作符</string>
+    <string name="operate_delay">延时操作符</string>
 </resources>
