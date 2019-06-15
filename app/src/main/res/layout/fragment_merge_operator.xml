@@ -22,6 +22,78 @@
             android:textAllCaps="false"
             android:textSize="@dimen/text_size" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::mergeArray}"
+            android:text="mergeArray"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::concat}"
+            android:text="concat"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::concatArray}"
+            android:text="concatArray"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::zip}"
+            android:text="zip"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::combineLatest}"
+            android:text="combineLatest"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::reduce}"
+            android:text="reduce"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::startWith}"
+            android:text="startWith"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{viewmodel::count}"
+            android:text="count"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
 
     </LinearLayout>
 </layout>

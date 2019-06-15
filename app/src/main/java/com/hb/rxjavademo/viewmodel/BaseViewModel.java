@@ -1,5 +1,7 @@
 package com.hb.rxjavademo.viewmodel;
 
+import android.os.SystemClock;
+
 import androidx.lifecycle.ViewModel;
 
 import com.hb.rxjavademo.model.OperatorModel;
@@ -25,8 +27,18 @@ public class BaseViewModel extends ViewModel {
             public void subscribe(ObservableEmitter<OperatorModel> emitter) throws Exception {
                 emitter.onNext(new OperatorModel("onNext1"));
                 emitter.onNext(new OperatorModel("onNext2"));
+                emitter.onNext(new OperatorModel("onNext22"));
                 emitter.onComplete();
+            }
+        });
+    }
+    protected Observable<OperatorModel> createObservable2() {
+        return Observable.create(new ObservableOnSubscribe<OperatorModel>() {
+            @Override
+            public void subscribe(ObservableEmitter<OperatorModel> emitter) throws Exception {
                 emitter.onNext(new OperatorModel("onNext3"));
+                emitter.onNext(new OperatorModel("onNext4"));
+                emitter.onComplete();
             }
         });
     }
